@@ -1,50 +1,44 @@
-## **Medicines App**
+## **MediSync App**
 
-#### A Flutter application, which you can save medicines and app will be send remind when you have to take it :bell:
+#### A Flutter application, which you can save medicines and app will be send remind when you have to take it :bell: 
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+An IOMP by Armaan Shoaib 21261A05C0
 
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-### App branches :
 
-| Branch Name | Feature | Link |
-| :---:         |     :---:      |         :---: |
-| master   | notifications, details, setup app     | [master](https://github.com/F-Y-E-F/Medicine-App-In-Flutter)   |
-| feature/setup_database   | setup local sqflite database  | [feature/setup_database](https://github.com/F-Y-E-F/Medicine-App-In-Flutter/tree/feature/setup_database)   |
-| feature/routes   | setup navigation     | [feature/routes](https://github.com/F-Y-E-F/Medicine-App-In-Flutter/tree/feature/routes)   |
-| feature/home_screen   | create home screen ui    | [feature/home_screen](https://github.com/F-Y-E-F/Medicine-App-In-Flutter/tree/feature/home_screen)   |
-| feature/add_pill_screen  | create add pill screen ui    | [feature/add_pill_screen](https://github.com/F-Y-E-F/Medicine-App-In-Flutter/tree/feature/add_pill_screen)   |
-
-
-### Used Techology:
-
-- flutter cupertino icons :iphone: [link](https://pub.dev/packages/cupertino_icons)
-- flutter intl :calendar: [link](https://pub.dev/packages/intl)
-- flutter sqflite :clipboard: [link](https://pub.dev/packages/sqflite)
-- flutter auto size text :memo: [link](https://pub.dev/packages/auto_size_text)
-- flutter path :rocket: [link](https://pub.dev/packages/path)
-- flutter local notifications :bell: [link](https://pub.dev/packages/local_notifications)
-- flutter timezone 	:clock1230: [link](https://pub.dev/packages/timezone)
-- flutter animated text kit :memo: [link](https://pub.dev/packages/animated_text_kit)
-- flutter animated widgets :eye_speech_bubble: [link](https://pub.dev/packages/animated_widgets)
 
 ### App features :
-- [x] Save medicines in local database
+- [x] Login & Signup feature
+- [x] Save medicines in firebase database
 - [x] Show notification in correct time
 - [x] Delete medicines
-
-
+- [x] Display detailed info about medicine
+- [x] Multiple notification times
+- [x] Frequency (Daily once, twice, once in 2 days, once in x day etc.
+- [x] Statistics (Pie Chart)
+- [x] Check your BMI
+- [x] Emergency calling feature
 
 ### Screenshots :
 
-<img src= "scr/welcome_screen.png"  width="40%">
-<img src= "scr/add_pills_screen.png"  width="40%">
-<img src= "scr/home_screen.png"  width="40%">
-<img src= "scr/home_screen_2.png"  width="40%">
-<img src= "scr/notify_screen.png"  width="40%">
+<img src= "medisync_ss/Screenshot_20241116_203123.jpg"  width="40%" >
+<img src= "medisync_ss/Screenshot_20241116_203130.jpg"  width="40%" >
+<img src= "medisync_ss/Screenshot_20241116_203401.jpg"  width="40%" >
+<img src= "medisync_ss/Screenshot_20241116_203425.jpg"  width="40%" >
+<img src= "medisync_ss/Screenshot_20241116_203450.jpg"  width="40%" >
+<img src= "medisync_ss/Screenshot_20241116_203505.jpg"  width="40%" >
+<img src= "medisync_ss/Screenshot_20241116_203523.jpg"  width="40%" >
+<img src= "medisync_ss/Screenshot_20241116_203130.jpg"  width="40%" >
+<img src= "medisync_ss/Screenshot_20241116_203532.jpg"  width="40%" >
+<img src= "medisync_ss/Screenshot_20241116_203602.jpg"  width="40%" >
+<img src= "medisync_ss/Screenshot_20241116_203621.jpg"  width="40%" >
+<img src= "medisync_ss/Screenshot_20241116_203646.jpg"  width="40%" >
+<img src= "medisync_ss/Screenshot_20241116_203655.jpg"  width="40%" >
+<img src= "medisync_ss/Screenshot_20241116_203704.jpg"  width="40%" >
+<img src= "medisync_ss/Screenshot_20241116_203713.jpg"  width="40%" >
+<img src= "medisync_ss/Screenshot_20241116_203756.jpg"  width="40%" >
+<img src= "medisync_ss/Screenshot_20241116_203804.jpg"  width="40%" >
+<img src= "medisync_ss/Screenshot_20241116_203900.jpg"  width="40%" >
