@@ -358,13 +358,10 @@ class _SignUpState extends State<SignUp> {
                         Column(
                           children: [
                             //logo
-                            const Image(
-                              image: AssetImage('lib/assets/icon_small.png'),
-                              height: 50,
-                            ),
+
                             //title
                             Text(
-                              'MyMeds',
+                              'MediSync',
                               style: GoogleFonts.poppins(
                                 fontSize: 20,
                                 fontWeight: FontWeight.w600,
