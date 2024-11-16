@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "579352343946",
+    "project_id": "medisync-e9faf",
+    "storage_bucket": "medisync-e9faf.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:579352343946:android:57ae60d78aa901ec9b0473",
+        "android_client_info": {
+          "package_name": "com.example.medicines"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2qtr_gPKPwTejI_a8z9_-yQeY-GEQY3k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
