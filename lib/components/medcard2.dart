@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:shimmer/shimmer.dart';
+import 'package:medicines/screens/dispInfo/display_med_info.dart';
 
 class MedCard2 extends StatelessWidget {
   User? currentUser = FirebaseAuth.instance.currentUser;
@@ -87,8 +88,13 @@ class MedCard2 extends StatelessWidget {
                 ? '${medData['strength']} ${medData['strength_unit']}'
                 : null;
             return GestureDetector(
-              onTap: () => {
-                // implement it here chatgpt
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => DisplayMedInfo(medicine: medname),
+                  ),
+                );
               },
               onLongPress: () {
                 showDialog(
@@ -190,7 +196,6 @@ class MedCard2 extends StatelessWidget {
                             fontSize: 25,
                             fontWeight: FontWeight.w700,
                           ),
-
                         ),
                         const SizedBox(
                           height: 5,
