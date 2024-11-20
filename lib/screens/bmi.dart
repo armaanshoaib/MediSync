@@ -15,11 +15,9 @@ class _BMIState extends State<BMI> {
   final _weightController = TextEditingController();
   final _heightController = TextEditingController();
 
-  // Define lists for dropdown options
   final List<String> weightUnits = ['kg', 'lbs'];
   final List<String> heightUnits = ['cm', 'ft'];
 
-  // Selected values for dropdowns
   String selectedWeightUnit = 'kg';
   String selectedHeightUnit = 'cm';
 
@@ -29,27 +27,46 @@ class _BMIState extends State<BMI> {
   String postComment = '';
   IconData? commentIcon;
   Color? bgColor;
-  String idealWeightMessage = ''; // Variable for ideal weight message
+  String idealWeightMessage = '';
 
   void calculateBMI() {
-    final double doubleWeight = double.parse(_weightController.text);
-    final double doubleHeight = double.parse(_heightController.text);
+    try {
+      final double weight = double.parse(_weightController.text.trim());
+      final double height = double.parse(_heightController.text.trim());
 
-    // Convert units based on user's selection
-    double weightInKg =
-        selectedWeightUnit == 'lbs' ? doubleWeight * 0.453592 : doubleWeight;
-    double heightInCm =
-        selectedHeightUnit == 'ft' ? doubleHeight * 30.48 : doubleHeight * 2.54;
+      if (weight <= 0 || height <= 0) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(translation(context).bmiText6),
+            backgroundColor: Colors.red,
+          ),
+        );
+        return;
+      }
 
-    setState(() {
-      bmiValue = weightInKg / (heightInCm * heightInCm) * 10000;
-    });
+      // Convert units
+      double weightInKg =
+          selectedWeightUnit == 'lbs' ? weight * 0.453592 : weight;
+      double heightInCm = selectedHeightUnit == 'ft' ? height * 30.48 : height;
+      setState(() {
+        bmiValue = weightInKg / ((heightInCm / 100) * (heightInCm / 100));
+        bmiValue =
+            double.parse(bmiValue.toStringAsFixed(1)); // Round to 1 decimal
+      });
+    } catch (e) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(translation(context).bmiText6),
+          backgroundColor: Colors.red,
+        ),
+      );
+    }
   }
 
   void displayComment() {
     setState(() {
       yourBMITxt = translation(context).bmiText1;
-      BMI_Value = bmiValue.toStringAsFixed(3);
+      BMI_Value = bmiValue.toStringAsFixed(1);
 
       if (bmiValue < 18.5) {
         bgColor = Colors.orange[300];
@@ -65,14 +82,12 @@ class _BMIState extends State<BMI> {
         postComment = translation(context).bmiText4;
       }
 
-      // Calculate ideal weight here
+      // Ideal weight calculation
       double height = double.parse(_heightController.text);
+      double heightInCm = selectedHeightUnit == 'ft' ? height * 30.48 : height;
 
-      // Convert units based on user's selection
-      double heightInCm =
-          selectedHeightUnit == 'ft' ? height * 30.48 : height * 2.54;
-
-      double idealWeight = 50 + 0.91 * (heightInCm - 152.4);
+// Robinson formula for men (for women, use slightly different calculation)
+      double idealWeight = 52 + (1.9 * ((heightInCm / 2.54) - 60));
       idealWeightMessage =
           '${translation(context).bmiText5}${idealWeight.toStringAsFixed(2)} kg';
     });
