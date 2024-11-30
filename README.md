@@ -24,21 +24,37 @@ samples, guidance on mobile development, and a full API reference.
 
 ### Screenshots :
 
+<p>
 <img src= "medisync_ss/Screenshot_20241116_203123.jpg"  width="40%" >
 <img src= "medisync_ss/Screenshot_20241116_203130.jpg"  width="40%" >
+</p>
+<p>
 <img src= "medisync_ss/Screenshot_20241116_203401.jpg"  width="40%" >
 <img src= "medisync_ss/Screenshot_20241116_203425.jpg"  width="40%" >
+</p>
+<p>
 <img src= "medisync_ss/Screenshot_20241116_203450.jpg"  width="40%" >
 <img src= "medisync_ss/Screenshot_20241116_203505.jpg"  width="40%" >
+</p>
+<p>
 <img src= "medisync_ss/Screenshot_20241116_203523.jpg"  width="40%" >
 <img src= "medisync_ss/Screenshot_20241116_203130.jpg"  width="40%" >
+</p>
+<p>
 <img src= "medisync_ss/Screenshot_20241116_203532.jpg"  width="40%" >
 <img src= "medisync_ss/Screenshot_20241116_203602.jpg"  width="40%" >
+</p>   
+<p>
 <img src= "medisync_ss/Screenshot_20241116_203621.jpg"  width="40%" >
-<img src= "medisync_ss/Screenshot_20241116_203646.jpg"  width="40%" >
+</p>
+<p>
 <img src= "medisync_ss/Screenshot_20241116_203655.jpg"  width="40%" >
 <img src= "medisync_ss/Screenshot_20241116_203704.jpg"  width="40%" >
+</p>
+<p>
 <img src= "medisync_ss/Screenshot_20241116_203713.jpg"  width="40%" >
-<img src= "medisync_ss/Screenshot_20241116_203756.jpg"  width="40%" >
+</p>
+<p>
 <img src= "medisync_ss/Screenshot_20241116_203804.jpg"  width="40%" >
 <img src= "medisync_ss/Screenshot_20241116_203900.jpg"  width="40%" >
+</p>
